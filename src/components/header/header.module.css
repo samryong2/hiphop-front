@@ -1,3 +1,35 @@
-.navbar{
-    
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    height: 10vh;
 }
+
+.logoWrap{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoName{
+    font-size: 35px;
+    color: #ccc;
+}
+
+.menuList{
+    display: flex;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.menuItem{
+    font-size: 25px;
+    font-weight: 800;
+    padding: 0 10px;
+    color: #ccc;
+}
+
