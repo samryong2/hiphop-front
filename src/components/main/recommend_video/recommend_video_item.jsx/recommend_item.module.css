@@ -1,0 +1,19 @@
+.container{
+    cursor: pointer;
+}
+
+.img{
+    width: 100%;
+}
+
+.title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+    line-height: 1.5rem;
+    height:3rem; 
+    font-size: 1.5rem;
+}
