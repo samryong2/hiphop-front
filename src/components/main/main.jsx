@@ -21,8 +21,6 @@ const Main = ({youtube}) => {
     return(
         <section className={styles.container}>
             <BigBanner/>
-            {/* <RecentMixtape/> */}
-            {/* <HotMixtape/> */}
             <RecommendVideo videos={videos} />
         </section>
     );

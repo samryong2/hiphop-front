@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { useHistory } from 'react-router-dom';
 import styles from './recommend_item.module.css';
 
 
-const RecommendItem = ({video, video:{snippet}}) => {
+const RecommendItem = memo(
+    ({video, video:{snippet}}) => {
     const history = useHistory();
     const onClick = () =>{
         history.push(`/video/${snippet.resourceId.videoId}`);
@@ -15,6 +16,6 @@ const RecommendItem = ({video, video:{snippet}}) => {
             <h1 className={styles.title}>{snippet.title}</h1>
         </li>
     );
-};
+});
 
 export default RecommendItem;

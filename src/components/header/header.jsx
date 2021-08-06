@@ -10,13 +10,13 @@ const Header = (props) => {
             <Link to="/">
                 <div className={styles.logoWrap}>
                     <img className={styles.logoImg} src="" alt="" />
-                    <h1 className={styles.logoName}>힙찔</h1>
+                    <h1 className={styles.logoName}>HIPHOP</h1>
                 </div>
             </Link>
             <ul className={styles.menuList}>
                 <Link to="/mixtape"><li className={styles.menuItem}>mixtape</li></Link>
                 <Link to="/album"><li className={styles.menuItem}>album</li></Link>
-                <Link to="/artist"><li className={styles.menuItem}>artist</li></Link>
+                <Link to="/community"><li className={styles.menuItem}>community</li></Link>
             </ul>
             <div></div>
         </nav>

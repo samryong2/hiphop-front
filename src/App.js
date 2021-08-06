@@ -4,6 +4,7 @@ import Header from './components/header/header';
 import HotMixtape from './components/main/hot_mixtape/hot_mixtape';
 import Main from './components/main/main';
 import RecentMixtape from './components/main/recent_mixtape/recent_mixtape';
+import Mixtape from './components/mixtape';
 import VideoDetail from './components/youtube/youtube_detail/video_detail';
 
 function App({youtube}) {
@@ -15,7 +16,7 @@ function App({youtube}) {
           <Main youtube={youtube}/>
         </Route>
         <Route path="/mixtape">
-          <HotMixtape/>
+          <Mixtape/>
         </Route>
         <Route path="/album">
           <RecentMixtape/>
