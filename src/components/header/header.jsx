@@ -15,8 +15,8 @@ const Header = (props) => {
             </Link>
             <ul className={styles.menuList}>
                 <Link to="/mixtape"><li className={styles.menuItem}>mixtape</li></Link>
-                <Link to="/album"><li className={styles.menuItem}>album</li></Link>
-                <Link to="/community"><li className={styles.menuItem}>community</li></Link>
+                <Link to="/contents"><li className={styles.menuItem}>contents</li></Link>
+                <Link to="/board"><li className={styles.menuItem}>community</li></Link>
             </ul>
             <div></div>
         </nav>

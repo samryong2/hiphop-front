@@ -1,6 +1,8 @@
 import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
 import './app.css';
 import Header from './components/header/header';
+import Board_list from './components/main/community/board_list/board_list';
+import Contents from './components/main/contents_list/contents';
 import HotMixtape from './components/main/hot_mixtape/hot_mixtape';
 import Main from './components/main/main';
 import RecentMixtape from './components/main/recent_mixtape/recent_mixtape';
@@ -18,11 +20,15 @@ function App({youtube}) {
         <Route path="/mixtape">
           <Mixtape/>
         </Route>
-        <Route path="/album">
-          <RecentMixtape/>
+        <Route path="/contents">
+          <Contents youtube={youtube}/>
         </Route>
         <Route path="/video/:videokey">
-          <VideoDetail/>
+          {/* <VideoDetail/> */}
+          <Contents youtube={youtube}/>
+        </Route>
+        <Route path="/board">
+          <Board_list/>
         </Route>
         
       </Switch>

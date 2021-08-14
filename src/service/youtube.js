@@ -8,7 +8,7 @@ class Youtube {
             params:{
                 part: 'snippet',
                 playlistId: 'PLr8w4FCviQu09tg2mHjTP0FYEobSXF7X9',
-                maxResults: 5,
+                maxResults: 15,
             }
         });
 
